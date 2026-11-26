@@ -1,0 +1,47 @@
+services:
+  - type: web
+    name: tg-adbot
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: UPDATE_BOT_TOKEN
+        sync: false
+      - key: OWNER_ID
+        sync: false
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: DB_CHANNEL_ID
+        sync: false
+      - key: ENC_KEY
+        sync: false
+      - key: TAG_USERNAME
+        sync: false
+      - key: LINK_1
+        sync: false
+      - key: LINK_2
+        sync: false
+      - key: FREE_ACCOUNTS
+        sync: false
+      - key: PREMIUM_ACCOUNTS
+        sync: false
+      - key: FREE_GROUPS
+        sync: false
+      - key: FREE_DAILY
+        sync: false
+      - key: PREMIUM_DAILY
+        sync: false
+      - key: FREE_TIMERS
+        sync: false
+      - key: PREMIUM_TIMERS
+        sync: false
+      - key: GROUP_DELAY_MS
+        sync: false
+      - key: MAX_CONCURRENT
+        sync: false
+      - key: DB_SAVE_SECONDS
+        sync: false

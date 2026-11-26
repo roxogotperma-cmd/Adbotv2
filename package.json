@@ -1,0 +1,20 @@
+{
+  "name": "tg-adbot",
+  "version": "1.0.0",
+  "description": "Telegram userbot ad poster with control bot + update bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --max-old-space-size=400 index.js",
+    "test": "node --test --test-force-exit tests/test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@grammyjs/runner": "^2.0.3",
+    "big-integer": "^1.6.52",
+    "dotenv": "^16.4.5",
+    "grammy": "^1.30.0",
+    "telegram": "^2.26.0"
+  }
+}
